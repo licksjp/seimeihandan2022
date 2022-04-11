@@ -1,0 +1,53 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">姓名判断</string>
+    <string name="TopMessage">入力ボタンを押してください</string>
+    <string name="AllClearMessage">オールクリアしました</string>
+
+    <string name="Ready_Message">準備ができました。</string>
+  <!--メイン画面-->
+    <string name="TopMenu_NoSelect">メイン画面\n1.姓名判断\n2.設定\n3.ヘルプ\n\n\n\n\n番号:%d.無選択</string>
+    <string name="TopMenu_Select1">メイン画面\n1.姓名判断\n2.設定\n3.ヘルプ\n\n\n\n\n番号:%d.姓名判断</string>
+    <string name="TopMenu_Select2">メイン画面\n1.姓名判断\n2.設定\n3.ヘルプ\n\n\n\n\n番号:%d.設定</string>
+    <string name="TopMenu_Select3">メイン画面\n1.姓名判断\n2.設定\n3.ヘルプ\n\n\n\n\n番号:%d.ヘルプ</string>
+　<!--1.姓名判断 -->
+    <string name="SeimeiHandan_NoSelect">姓名判断\n1.名前の吉凶を見る\n2.相性占い(2人用)\n\n\n\n\n\n番号:%d.無選択</string>
+    <string name="SeimeiHandan_Select1">姓名判断\n1.名前の吉凶を見る\n2.相性占い(2人用)\n\n\n\n\n\n番号:%d.名前の吉凶を見る</string>
+    <string name="SeimeiHandan_Select2">姓名判断\n1.名前の吉凶を見る\n2.相性占い(2人用)\n\n\n\n\n\n番号:%d.相性占い(2人用)</string>
+    <string name="SeimeiHandan_Select3">姓名判断\n1.名前の吉凶を見る\n2.相性占い(2人用)\n\n\n\n\n\n番号:%d.ヘルプ</string>
+
+    　　<!--2.設定-->
+    <string name="Setting_NoSelect">設定\n1.バイブの設定\n\n\n\n\n\n\n番号:%d.無選択</string>
+    <string name="Setting_Select1">設定\n1.バイブの設定\n\n\n\n\n\n\n番号:%d.バイブの設定</string>
+    <string name="Setting_Vibration_Title">バイブの設定</string>
+    <string name="Setting_Vibration_List1">バイブオン</string>
+    <string name="Setting_Vibration_List2">バイブオフ</string>
+    <string name="OK">Ok</string>
+    <string name="Test">%s</string>
+    <!--3.Help-->
+    <string name="Help_NoSelect">ヘルプ\n1.バージョン\n2.参考文献\n\n\n\n\n\n番号:%d.無選択</string>
+    <string name="Help_Select1">ヘルプ\n1.バージョン\n2.参考文献\n\n\n\n\n\n番号:%d.バージョン</string>
+    <string name="Help_Select2">ヘルプ\n1.バージョン\n2.参考文献\n\n\n\n\n\n番号:%d.参考文献</string>
+<!-- Version Dialog-->
+    <string name="VersionTitle">バージョン情報</string>
+    <string name="VersionSentense">アプリ名:\nバージョン\nAuthor\nE-mail:licksjp@gmail.com\n(C)Copyrights licksjp All right reserved</string>
+    <string name="Ok">Ok</string>
+<!--ReferenceBook-->
+    <string name="ReferenceBookTitle">参考文献</string>
+    <string name="ReferenceBookSentense">Title:\n出版社:\n著者\n定価:\n</string>
+
+    <!--ボタン配列-->
+
+    <string name="Button_9">9</string>
+    <string name="Button_8">8</string>
+    <string name="Button_7">7</string>
+    <string name="Button_6">6</string>
+    <string name="Button_5">5</string>
+    <string name="Button_4">4</string>
+    <string name="Button_3">3</string>
+    <string name="Button_2">2</string>
+    <string name="Button_1">1</string>
+    <string name="Button_Clear">クリア</string>
+    <string name="Button_0">0</string>
+    <string name="Button_EXE">入 力</string>
+    <!--ボタン配列-->
+</resources>
