@@ -1,0 +1,1183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="autosize_text_sizes">
+        <item>10sp</item>
+        <item>12sp</item>
+        <item>20sp</item>
+        <item>40sp</item>
+        <item>100sp</item>
+    </array>
+    <!--1画の文字 29文字-->
+    <!--
+    "く","し","つ","へ","の"
+    "ー","フ","へ","ノ","レ"
+      "C","I","O","U","S"
+     "c","l","o","u","s"
+    "っ","1","0","ー","一"
+    "乙","0","ん","L"
+    -->
+    <string-array name="Kaku1">
+        <item>く</item>
+        <item>し</item>
+        <item>つ</item>
+        <item>へ</item>
+        <item>の</item>
+        <item>ー</item>
+        <item>フ</item>
+        <item>へ</item>
+        <item>ノ</item>
+        <item>レ</item>
+        <item>C</item>
+        <item>I</item>
+        <item>O</item>
+        <item>U</item>
+        <item>S</item>
+        <item>c</item>
+        <item>l</item>
+        <item>o</item>
+        <item>u</item>
+        <item>s</item>
+        <item>っ</item>
+        <item>1</item>
+        <item>0</item>
+        <item>ー</item>
+        <item>一</item>
+        <item>乙</item>
+        <item>ん</item>
+        <item>L</item>
+    </string-array>
+    <!--2画の文字 49文字-->
+    <!--
+     '2画の文字　49文字
+     "い","う","こ","て","と"
+     "ん","ひ","り","ぺ","プ"
+     "T","D","J","P","g"
+     "Q","V","X","a","b"
+     "d","e","f","h","i"
+      "j","n","p","q","r"
+      "t","u","v","x","y"
+      "ア","イ","カ","ク","コ"
+       "ス","セ","ソ","ト","ナ"
+       "ニ","ヌ","ハ","ヒ","マ"
+       "メ","ヤ","ユ","ラ","リ"
+       "ル","ワ","ン","ム","2"
+       "3","4","6","7","8",”9"
+       "力","了","丁","乃"
+       "刀","入","又","人","二"
+       "七","卜","九","八","十"
+       "ィ"
+      -->
+    <string-array name="Kaku2">
+        <item>い</item>
+        <item>う</item>
+        <item>こ</item>
+        <item>て</item>
+        <item>と</item>
+        <item>ん</item>
+        <item>ひ</item>
+        <item>り</item>
+        <item>ぺ</item>
+        <item>プ</item>
+        <item>T</item>
+        <item>D</item>
+        <item>J</item>
+        <item>P</item>
+        <item>g</item>
+        <item>Q</item>
+        <item>V</item>
+        <item>X</item>
+        <item>a</item>
+        <item>b</item>
+        <item>d</item>
+        <item>e</item>
+        <item>f</item>
+        <item>h</item>
+        <item>i</item>
+        <item>j</item>
+        <item>n</item>
+        <item>p</item>
+        <item>q</item>
+        <item>r</item>
+        <item>t</item>
+        <item>u</item>
+        <item>x</item>
+        <item>y</item>
+        <item>ア</item>
+        <item>イ</item>
+        <item>カ</item>
+        <item>ク</item>
+        <item>コ</item>
+        <item>ス</item>
+        <item>セ</item>
+        <item>ソ</item>
+        <item>ト</item>
+        <item>ナ</item>
+        <item>ニ</item>
+        <item>ヌ</item>
+        <item>ハ</item>
+        <item>ヒ</item>
+        <item>マ</item>
+        <item>メ</item>
+        <item>ヤ</item>
+        <item>ユ</item>
+        <item>ラ</item>
+        <item>リ</item>
+        <item>ル</item>
+        <item>ワ</item>
+        <item>ン</item>
+        <item>ム</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>3</item>
+        <item>4</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>力</item>
+        <item>了</item>
+        <item>乃</item>
+        <item>刀</item>
+        <item>入</item>
+        <item>又</item>
+        <item>人</item>
+        <item>二</item>
+        <item>七</item>
+        <item>卜</item>
+        <item>九</item>
+        <item>八</item>
+        <item>十</item>
+        <item>ィ</item>
+    </string-array>
+    <!--3画の文字 42文字-->
+    <!--
+        "あ","え","か","け","さ"
+        "せ","す","ち","に","み"
+         "や","ゆ","よ","め","も"
+         "ら","れ","わ","ろ","ミ"
+         "ウ","エ","ヱ","ヲ","オ"
+          "キ","ケ","サ","シ","タ"
+         "チ","ツ","テ","モ","ヨ"
+         "づ","べ","ぴ","ピ","ぐ"
+         "じ","パ","ゃ","ォ"
+         "A","B","F","G","H"
+          "K","N","R","Y","Z"
+         "g","m","z","ッ","5"
+         "ョ","ロ","山","子","川"
+         "工","己","久","下","丸"
+         "干","弓","口","巾","大"
+         "丈","女","土","也","与"
+         "巳","川","士","三","山"
+         "上","小","子","千","才"
+         "寸","之","凡","万","及"
+         "乞","亡","刃","夕"  ,"大"
+         "千","万","也"
+    -->
+    <string-array name="Kaku3">
+        <item>あ</item>
+        <item>え</item>
+        <item>か</item>
+        <item>け</item>
+        <item>さ</item>
+        <item>せ</item>
+        <item>す</item>
+        <item>ち</item>
+        <item>に</item>
+        <item>み</item>
+        <item>や</item>
+        <item>ゆ</item>
+        <item>よ</item>
+        <item>め</item>
+        <item>も</item>
+        <item>ら</item>
+        <item>れ</item>
+        <item>わ</item>
+        <item>ろ</item>
+        <item>ミ</item>
+        <item>ウ</item>
+        <item>エ</item>
+        <item>ヱ</item>
+        <item>ヲ</item>
+        <item>オ</item>
+        <item>キ</item>
+        <item>ケ</item>
+        <item>サ</item>
+        <item>シ</item>
+        <item>タ</item>
+        <item>チ</item>
+        <item>ツ</item>
+        <item>テ</item>
+        <item>モ</item>
+        <item>ヨ</item>
+        <item>づ</item>
+        <item>べ</item>
+        <item>ぴ</item>
+        <item>ピ</item>
+        <item>ぐ</item>
+        <item>じ</item>
+        <item>パ</item>
+        <item>ゃ</item>
+        <item>ォ</item>
+        <item>A</item>
+        <item>B</item>
+        <item>F</item>
+        <item>G</item>
+        <item>H</item>
+        <item>K</item>
+        <item>N</item>
+        <item>R</item>
+        <item>Y</item>
+        <item>Z</item>
+        <item>g</item>
+        <item>m</item>
+        <item>z</item>
+        <item>ッ</item>
+        <item>5</item>
+        <item>ョ</item>
+        <item>ロ</item>
+        <item>山</item>
+        <item>子</item>
+        <item>川</item>
+        <item>工</item>
+        <item>己</item>
+        <item>久</item>
+        <item>下</item>
+        <item>丸</item>
+        <item>干</item>
+        <item>弓</item>
+        <item>口</item>
+        <item>巾</item>
+        <item>大</item>
+        <item>丈</item>
+        <item>女</item>
+        <item>土</item>
+        <item>也</item>
+        <item>与</item>
+        <item>巳</item>
+        <item>川</item>
+        <item>士</item>
+        <item>三</item>
+        <item>山</item>
+        <item>上</item>
+        <item>小</item>
+        <item>子</item>
+        <item>千</item>
+        <item>才</item>
+        <item>寸</item>
+        <item>之</item>
+        <item>凡</item>
+        <item>万</item>
+        <item>及</item>
+        <item>乞</item>
+        <item>亡</item>
+        <item>刃</item>
+        <item>夕</item>
+        <item>大</item>
+        <item>千</item>
+        <item>万</item>
+        <item>也</item>
+    </string-array>
+    <!--4画の文字 -->
+    <!--
+    "お","き","そ","た","ね"
+    "ぬ","は","ふ","ま","む"
+    "る","を","ネ","ヰ","ご"
+    "で","ど","び","ガ","ゴ"
+    "ズ","ゼ","ド","バ","ビ"
+     "E","M","W","w","ホ"
+    "介","斤","元","今","化"
+     "火","月","戸","五","午"
+     "公","牛","犬","太","丹"
+     "内","中","天","丑","六"
+     "斗","王","友","允","尹"
+     "引","予","円","双","氏"
+     "日","手","心","仁","水"
+     "井","少","尺","収","巴"
+     "方","比","不","夫","父"
+     "文","分","片","木","毛"
+     "仏","乏","互","冗","凶"
+     "匹","升","夫","反","孔"
+     "刈","切","勾","匂","区"
+     "幻","屯","引","弔","心"
+     "支","欠","止","父","爪"
+     "片","牙","四","丑","云"
+     "厄","グ","ゾ","ぉ"
+    -->
+    <string-array name="Kaku4">
+        <item>お</item>
+        <item>き</item>
+        <item>そ</item>
+        <item>た</item>
+        <item>ね</item>
+        <item>ぬ</item>
+        <item>は</item>
+        <item>ふ</item>
+        <item>ま</item>
+        <item>む</item>
+        <item>る</item>
+        <item>を</item>
+        <item>ネ</item>
+        <item>ヰ</item>
+        <item>ご</item>
+        <item>で</item>
+        <item>ど</item>
+        <item>び</item>
+        <item>ガ</item>
+        <item>ゴ</item>
+        <item>ズ</item>
+        <item>ゼ</item>
+        <item>ド</item>
+        <item>バ</item>
+        <item>ビ</item>
+        <item>E</item>
+        <item>M</item>
+        <item>W</item>
+        <item>w</item>
+        <item>ホ</item>
+        <item>介</item>
+        <item>斤</item>
+        <item>元</item>
+        <item>今</item>
+        <item>化</item>
+        <item>火</item>
+        <item>月</item>
+        <item>戸</item>
+        <item>五</item>
+        <item>午</item>
+        <item>公</item>
+        <item>牛</item>
+        <item>犬</item>
+        <item>太</item>
+        <item>丹</item>
+        <item>内</item>
+        <item>中</item>
+        <item>天</item>
+        <item>丑</item>
+        <item>六</item>
+        <item>斗</item>
+        <item>王</item>
+        <item>友</item>
+        <item>允</item>
+        <item>尹</item>
+        <item>引</item>
+        <item>予</item>
+        <item>円</item>
+        <item>双</item>
+        <item>氏</item>
+        <item>日</item>
+        <item>手</item>
+        <item>心</item>
+        <item>仁</item>
+        <item>水</item>
+        <item>井</item>
+        <item>少</item>
+        <item>尺</item>
+        <item>収</item>
+        <item>巴</item>
+        <item>方</item>
+        <item>比</item>
+        <item>不</item>
+        <item>夫</item>
+        <item>父</item>
+        <item>文</item>
+        <item>分</item>
+        <item>片</item>
+        <item>木</item>
+        <item>毛</item>
+        <item>仏</item>
+        <item>乏</item>
+        <item>互</item>
+        <item>冗</item>
+        <item>凶</item>
+        <item>匹</item>
+        <item>升</item>
+        <item>夫</item>
+        <item>反</item>
+        <item>孔</item>
+        <item>刈</item>
+        <item>切</item>
+        <item>勾</item>
+        <item>匂</item>
+        <item>区</item>
+        <item>幻</item>
+        <item>屯</item>
+        <item>引</item>
+        <item>弔</item>
+        <item>心</item>
+        <item>支</item>
+        <item>欠</item>
+        <item>止</item>
+        <item>父</item>
+        <item>爪</item>
+        <item>片</item>
+        <item>牙</item>
+        <item>四</item>
+        <item>丑</item>
+        <item>云</item>
+        <item>厄</item>
+        <item>グ</item>
+        <item>ゾ</item>
+        <item>ぉ</item>
+    </string-array>
+    <!--5画の文字 -->
+    <!--
+    "ほ","な","が","げ","ず"
+"ぜ","ぞ","ぢ","げ"
+"ダ","ヂ","ヅ","デ","ポ"
+"M","W","w","ジ"
+"加","可","甲","外","丘"
+"巨","玉","兄","玄","古"
+"功","弘","広","巧","叶"
+"乎","台","代","旦","田"
+"立","他","令","以","央"
+"右","由","用","永","左"
+"史","矢","主","出","申"
+
+"世","正","生","石","仙"
+"司","市","只","四","示"
+"仕","卯","丙","民","布"
+"平","母","北","本","白"
+"末","未","目","辺","且"
+"他","丼","付","冊","写"
+"処","凹","凸","刊","功"
+"包","北","半","占","去"
+"右","句","号","叱","召"
+"囚","圧","冬","央","失"
+
+
+"奴","尻","尼","市","幼"
+"庁","弁","必","打","払"
+"斥","旧","旦","札","玉"
+"瓦","甘","生","用","皮"
+"皿","矛","矢","礼","穴"
+"立","五","丕","仔","仗"
+"仝","付"
+    -->
+    <string-array name="Kaku5">
+        <item>ほ</item>
+        <item>な</item>
+        <item>が</item>
+        <item>げ</item>
+        <item>ず</item>
+        <item>ぜ</item>
+        <item>ぞ</item>
+        <item>ぢ</item>
+        <item>げ</item>
+        <item>ダ</item>
+        <item>ヂ</item>
+        <item>ヅ</item>
+        <item>デ</item>
+        <item>ポ</item>
+        <item>M</item>
+        <item>W</item>
+        <item>w</item>
+        <item>ジ</item>
+        <item>加</item>
+        <item>可</item>
+        <item>甲</item>
+        <item>外</item>
+        <item>丘</item>
+        <item>巨</item>
+        <item>玉</item>
+        <item>兄</item>
+        <item>玄</item>
+        <item>古</item>
+        <item>功</item>
+        <item>弘</item>
+        <item>広</item>
+        <item>巧</item>
+        <item>叶</item>
+        <item>乎</item>
+        <item>台</item>
+        <item>代</item>
+        <item>旦</item>
+        <item>田</item>
+        <item>立</item>
+        <item>他</item>
+        <item>令</item>
+        <item>以</item>
+        <item>央</item>
+        <item>右</item>
+        <item>由</item>
+        <item>用</item>
+        <item>永</item>
+        <item>左</item>
+        <item>史</item>
+        <item>矢</item>
+        <item>主</item>
+        <item>出</item>
+        <item>申</item>
+        <item>世</item>
+        <item>正</item>
+        <item>生</item>
+        <item>石</item>
+        <item>仙</item>
+        <item>司</item>
+        <item>市</item>
+        <item>只</item>
+        <item>四</item>
+        <item>示</item>
+        <item>仕</item>
+        <item>卯</item>
+        <item>丙</item>
+        <item>民</item>
+        <item>布</item>
+        <item>平</item>
+        <item>母</item>
+        <item>北</item>
+        <item>本</item>
+        <item>白</item>
+        <item>末</item>
+        <item>未</item>
+        <item>目</item>
+        <item>辺</item>
+        <item>且</item>
+        <item>他</item>
+        <item>丼</item>
+        <item>付</item>
+        <item>冊</item>
+        <item>写</item>
+        <item>処</item>
+        <item>凹</item>
+        <item>凸</item>
+        <item>刊</item>
+        <item>功</item>
+        <item>包</item>
+        <item>北</item>
+        <item>半</item>
+        <item>占</item>
+        <item>去</item>
+        <item>右</item>
+        <item>句</item>
+        <item>号</item>
+        <item>叱</item>
+        <item>召</item>
+        <item>囚</item>
+        <item>圧</item>
+        <item>冬</item>
+        <item>央</item>
+        <item>失</item>
+        <item>奴</item>
+        <item>尻</item>
+        <item>尼</item>
+        <item>市</item>
+        <item>幼</item>
+        <item>庁</item>
+        <item>弁</item>
+        <item>必</item>
+        <item>打</item>
+        <item>払</item>
+        <item>斥</item>
+        <item>旧</item>
+        <item>旦</item>
+        <item>札</item>
+        <item>玉</item>
+        <item>瓦</item>
+        <item>甘</item>
+        <item>生</item>
+        <item>用</item>
+        <item>皮</item>
+        <item>皿</item>
+        <item>矛</item>
+        <item>矢</item>
+        <item>礼</item>
+        <item>穴</item>
+        <item>立</item>
+        <item>五</item>
+        <item>丕</item>
+        <item>仔</item>
+        <item>仗</item>
+        <item>仝</item>
+        <item>付</item>
+    </string-array>
+    <!--6画の文字 -->
+    <!--
+    "价","交","旭","企","休"
+"光","共","吉","好","江"
+"行","伍","后","艮","考"
+"回","互","亥","匡","合"
+"仰","圭","池","兆","成"
+"仲","竹","同","老","地"
+"多","宅","年","当","伝"
+"両","安","因","宇","有"
+"伊","羽","羊","衣","亦"
+"充","先","全","寺","在"
+
+"字","存","守","次","州"
+"旨","早","朱","糸","成"
+"自","至","舟","亘","式"
+"西","丞","壮","庄","如"
+"任","名","百","米","芝"
+"列","旬","耳","辻","争"
+"件","仮","会","伎","伐"
+"伏","再","刑","劣","匠"
+"印","危","各","吸","叫"
+"向","吐","吏","団","在"
+"地","壮","妃","妄","存"
+"当","尽","巡","帆","年"
+"弐","忙","扱","早","曲"
+"机","朽","朴","死","毎"
+"気","汚","汗","池","缶"
+"汎","灰","灯","百","羊"
+"羽","老","考","肉","肌"
+"臼","舌","舟","色","芋"
+"芝","虫","血","行","迅"
+"六","百","争","亘","此"
+"伎","份","伜","兇","冰"
+"决","冲","凩","凪","劣"
+"夷","夸","奸","妁","妃"
+"妄"," 尖","汗","曳","而"
+"舛","肋","瓜","込","辻"
+"迅","ぎ","戌"
+    -->
+    <string-array name="Kaku6">
+        <item>价</item>
+        <item>交</item>
+        <item>旭</item>
+        <item>企</item>
+        <item>休</item>
+        <item>光</item>
+        <item>共</item>
+        <item>吉</item>
+        <item>好</item>
+        <item>江</item>
+        <item>行</item>
+        <item>伍</item>
+        <item>后</item>
+        <item>艮</item>
+        <item>考</item>
+        <item>回</item>
+        <item>互</item>
+        <item>亥</item>
+        <item>匡</item>
+        <item>合</item>
+        <item>仰</item>
+        <item>圭</item>
+        <item>池</item>
+        <item>兆</item>
+        <item>成</item>
+        <item>仲</item>
+        <item>竹</item>
+        <item>同</item>
+        <item>老</item>
+        <item>地</item>
+        <item>多</item>
+        <item>宅</item>
+        <item>年</item>
+        <item>当</item>
+        <item>伝</item>
+        <item>両</item>
+        <item>安</item>
+        <item>因</item>
+        <item>宇</item>
+        <item>有</item>
+        <item>伊</item>
+        <item>羽</item>
+        <item>羊</item>
+        <item>衣</item>
+        <item>亦</item>
+        <item>充</item>
+        <item>先</item>
+        <item>全</item>
+        <item>寺</item>
+        <item>在</item>
+    </string-array>
+    <!--7画の文字 -->
+    <!--
+    "考","完","克","宏","享"
+"君","均","快","技","岐"
+"求","見","角","言","谷"
+"吾","改","攻","更","形"
+"花","局","串","究","男"
+"住","努","条","利","里"
+"良","豆","呂","沢","町"
+"呈","那","沖","来","冷"
+"妥","体","労","囲","壱"
+
+"医","亜","佑","酉","位"
+"役","余","図","伸","村"
+"佐","臣","作","助","材"
+"寿","秀","身","志","車"
+"初","床","辰","杉","判"
+"妙","兵","伯","邦","坊"
+"伴","芳","尾","扶","貝"
+"甫","麦","防","坂","別"
+"児","忍","赤","乱","亜"
+"何","伺","似","但","低"
+"売","冶","励","却","延"
+"即","卵","含","吟","呉"
+"告","吹","否","呂","困"
+"抗","声","妊","妨","妖"
+"対","尿","尾","希","序"
+"弄","応","忌","忘","我"
+"戻","抄","折","択","投"
+"把","抜","抑","改","攻"
+"更","束","来","汽","決"
+"沙","汰","沖","沈","没"
+"沃","災","状","狂","社"
+"私","秀","究","系","肝"
+"肖","肘","良","花","芸"
+"芯","芳","豆","走","足"
+"辛","近","迎","返","阪"
+"七","杜","乕","亊","佛"
+"佚","伽","佝","估","侘"
+"佇","佃","佞","拌","伶"
+"皃","冏","冴","况","刪"
+"劫"
+    -->
+    <string-array name="Kaku7">
+        <item>考</item>
+        <item>完</item>
+        <item>克</item>
+        <item>宏</item>
+        <item>享</item>
+        <item>君</item>
+        <item>均</item>
+        <item>快</item>
+        <item>技</item>
+        <item>岐</item>
+        <item>求</item>
+        <item>見</item>
+        <item>角</item>
+        <item>言</item>
+        <item>谷</item>
+        <item>吾</item>
+        <item>改</item>
+        <item>攻</item>
+        <item>更</item>
+        <item>形</item>
+        <item>花</item>
+        <item>局</item>
+        <item>串</item>
+        <item>究</item>
+        <item>男</item>
+        <item>住</item>
+        <item>努</item>
+        <item>条</item>
+        <item>利</item>
+        <item>里</item>
+        <item>良</item>
+        <item>豆</item>
+        <item>呂</item>
+        <item>沢</item>
+        <item>町</item>
+        <item>呈</item>
+        <item>那</item>
+        <item>沖</item>
+        <item>来</item>
+        <item>冷</item>
+        <item>妥</item>
+        <item>体</item>
+        <item>労</item>
+        <item>囲</item>
+        <item>壱</item>
+    </string-array>
+    <!--8画の文字 -->
+    <!--
+    1
+    "佳","享","京","供","価"
+"具","固","宜","居","国"
+"岳","其","径","協","岡"
+"岩","幸","学","侃","欣"
+"季","官","虎","河","奇"
+"空","果","金","的","忠"
+"長","治","知","定","典"
+"卓","到","東","林","直"
+"宙","念","拓","並","乳"
+"奈","店","注","毒","依"
+2
+"侑","育","易","往","雨"
+"英","夜","委","炎","油"
+"沿","延","押","和","旺"
+"泳","妻","枝","事","始"
+"使","取","宗","受","周"
+"実","所","招","昇","松"
+"青","斎","尚","昌","刷"
+"征","参","姉","垂","舎"
+"若","侍","析","性","味"
+"門","武","府","命","孟"
+3
+"朋","法","肥","抱","宝"
+"房","弥","坪","明","牧"
+"奉","免","拍","非","妹"
+"彼","波","苗","歩","表"
+"茂","告","侮","併","例"
+"券","刻","刹","刺","制"
+"劾","効","協","卒","卓"
+"参","受","叔","呼","呪"
+"味","垂","夜","奇","奉"
+"奔","妻","姉","始","宛"
+4
+"姓","妬","妹","学","季"
+"宛","官","宜","実","宙"
+"定","宝","岸","届","屈"
+"居","岬","辛","底","店"
+"府","延","弦","弥","往"
+"径","征","彼","忠","念"
+"怪","怖","所","房","阜"
+"承","押","拐","拡","拒"
+"拠","拘","招","拙","拓"
+"担","抽","抵","拝","拍"
+5
+"披","抱","抹","拉","放"
+"昆","昇","昔","明","服"
+"果","枝","枚","枕","林"
+"枠","欧","武","歩","殴"
+"毒","泳","沿","河","泣"
+"況","沼","治","注","泥"
+"波","泊","泌","沸","法"
+"泡","油","炎","炊","炉"
+"采","版","物","牧","狙"
+"玩","画","的","直","盲"
+6
+"知","祈","祉","空","突"
+"者","育","肩","股","肯"
+"肢","肥","肪","英","苛"
+"芽","苦","茎","若","苗"
+"茂","虎","表","述","迭"
+"迫","邪","邸","阻","附"
+"雨","斉","茅","苫","八"
+"枡","況"
+    -->
+    <string-array name="Kaku8">
+        <item>佳</item>
+        <item>享</item>
+        <item>京</item>
+        <item>供</item>
+        <item>価</item>
+        <item>具</item>
+        <item>固</item>
+        <item>宜</item>
+        <item>居</item>
+        <item>国</item>
+        <item>岳</item>
+        <item>其</item>
+        <item>径</item>
+        <item>協</item>
+        <item>岡</item>
+        <item>岩</item>
+        <item>幸</item>
+        <item>学</item>
+        <item>侃</item>
+        <item>欣</item>
+        <item>季</item>
+        <item>官</item>
+        <item>虎</item>
+        <item>河</item>
+        <item>奇</item>
+        <item>空</item>
+        <item>果</item>
+        <item>金</item>
+        <item>的</item>
+        <item>忠</item>
+        <item>長</item>
+        <item>治</item>
+        <item>知</item>
+        <item>定</item>
+        <item>典</item>
+        <item>卓</item>
+        <item>到</item>
+        <item>東</item>
+        <item>林</item>
+        <item>直</item>
+        <item>宙</item>
+        <item>念</item>
+        <item>拓</item>
+        <item>並</item>
+        <item>乳</item>
+        <item>奈</item>
+        <item>店</item>
+        <item>注</item>
+        <item>毒</item>
+        <item>依</item>
+        <item>侑</item>
+        <item>育</item>
+        <item>易</item>
+        <item>往</item>
+        <item>雨</item>
+        <item>英</item>
+        <item>夜</item>
+        <item>委</item>
+        <item>炎</item>
+        <item>油</item>
+        <item>沿</item>
+        <item>延</item>
+        <item>押</item>
+        <item>和</item>
+        <item>旺</item>
+        <item>泳</item>
+        <item>妻</item>
+        <item>枝</item>
+        <item>事</item>
+        <item>始</item>
+        <item>使</item>
+        <item>取</item>
+        <item>宗</item>
+        <item>受</item>
+        <item>周</item>
+        <item>実</item>
+        <item>所</item>
+        <item>招</item>
+        <item>昇</item>
+        <item>松</item>
+        <item>青</item>
+        <item>斎</item>
+        <item>尚</item>
+        <item>昌</item>
+        <item>刷</item>
+        <item>征</item>
+        <item>参</item>
+        <item>姉</item>
+        <item>垂</item>
+        <item>舎</item>
+        <item>若</item>
+        <item>侍</item>
+        <item>析</item>
+        <item>性</item>
+        <item>味</item>
+        <item>門</item>
+        <item>武</item>
+        <item>府</item>
+        <item>命</item>
+        <item>孟</item>
+        <item>朋</item>
+        <item>法</item>
+        <item>肥</item>
+        <item>抱</item>
+        <item>宝</item>
+        <item>房</item>
+        <item>弥</item>
+        <item>坪</item>
+        <item>明</item>
+        <item>牧</item>
+        <item>奉</item>
+        <item>免</item>
+        <item>拍</item>
+        <item>非</item>
+        <item>妹</item>
+        <item>彼</item>
+        <item>波</item>
+        <item>苗</item>
+        <item>歩</item>
+        <item>表</item>
+        <item>茂</item>
+        <item>告</item>
+        <item>侮</item>
+        <item>併</item>
+        <item>例</item>
+        <item>券</item>
+        <item>刻</item>
+        <item>刹</item>
+        <item>刺</item>
+        <item>制</item>
+        <item>劾</item>
+        <item>効</item>
+        <item>協</item>
+        <item>卒</item>
+        <item>卓</item>
+        <item>参</item>
+        <item>受</item>
+        <item>叔</item>
+        <item>呼</item>
+        <item>呪</item>
+        <item>味</item>
+        <item>垂</item>
+        <item>夜</item>
+        <item>奇</item>
+        <item>奉</item>
+        <item>奔</item>
+        <item>妻</item>
+        <item>姉</item>
+        <item>始</item>
+        <item>宛</item>
+        <item>姓</item>
+        <item>妬</item>
+        <item>妹</item>
+        <item>学</item>
+        <item>季</item>
+        <item>宛</item>
+        <item>官</item>
+        <item>宜</item>
+        <item>実</item>
+        <item>宙</item>
+
+        <item>定</item>
+        <item>宝</item>
+        <item>岸</item>
+        <item>届</item>
+        <item>屈</item>
+        <item>居</item>
+        <item>岬</item>
+        <item>辛</item>
+        <item>底</item>
+        <item>店</item>
+
+        <item>府</item>
+        <item>延</item>
+        <item>弦</item>
+        <item>弥</item>
+        <item>往</item>
+        <item>径</item>
+        <item>征</item>
+        <item>彼</item>
+        <item>忠</item>
+        <item>念</item>
+        <item>怪</item>
+        <item>怖</item>
+        <item>所</item>
+        <item>房</item>
+        <item>阜</item>
+        <item>承</item>
+        <item>押</item>
+        <item>拐</item>
+        <item>拡</item>
+        <item>拒</item>
+        <item>拠</item>
+        <item>拘</item>
+        <item>招</item>
+        <item>拙</item>
+        <item>拓</item>
+        <item>担</item>
+        <item>抽</item>
+        <item>抵</item>
+        <item>拝</item>
+        <item>拍</item>
+        <item>披</item>
+        <item>抱</item>
+        <item>抹</item>
+        <item>拉</item>
+        <item>放</item>
+
+        <item>昆</item>
+        <item>昇</item>
+        <item>昔</item>
+        <item>明</item>
+        <item>服</item>
+        <item>果</item>
+        <item>枝</item>
+        <item>枚</item>
+        <item>枕</item>
+        <item>林</item>
+        <item>枠</item>
+        <item>欧</item>
+        <item>武</item>
+        <item>歩</item>
+        <item>殴</item>
+        <item>毒</item>
+        <item>泳</item>
+        <item>沿</item>
+        <item>河</item>
+        <item>泣</item>
+        <item>況</item>
+        <item>沼</item>
+        <item>治</item>
+        <item>注</item>
+        <item>泥</item>
+        <item>波</item>
+        <item>泊</item>
+        <item>泌</item>
+        <item>沸</item>
+        <item>法</item>
+    </string-array>
+    <!--9画の文字 -->
+    <string-array name="Kaku9">
+        <item>犬</item>
+        <item>猫</item>
+        <item>鳥</item>
+    </string-array>
+    <!--10画の文字 -->
+    <string-array name="Kaku10">
+        <item>犬</item>
+        <item>猫</item>
+        <item>鳥</item>
+    </string-array>
+    <!--11画の文字 -->
+    <string-array name="Kaku11">
+        <item>犬</item>
+        <item>猫</item>
+        <item>鳥</item>
+    </string-array>
+    <!--12画の文字 -->
+    <string-array name="Kaku12">
+        <item>犬</item>
+        <item>猫</item>
+        <item>鳥</item>
+    </string-array>
+    <!--13画の文字 -->
+    <string-array name="Kaku13">
+        <item>犬</item>
+        <item>猫</item>
+        <item>鳥</item>
+    </string-array>
+    <!--14画の文字 -->
+    <string-array name="Kaku14">
+        <item>犬</item>
+        <item>猫</item>
+        <item>鳥</item>
+    </string-array>
+    <!--15画の文字 -->
+    <string-array name="Kaku15">
+        <item>犬</item>
+        <item>猫</item>
+        <item>鳥</item>
+    </string-array>
+    <!--16画の文字 -->
+    <string-array name="Kaku16">
+        <item>犬</item>
+        <item>猫</item>
+        <item>鳥</item>
+    </string-array>
+    <!--17画の文字 -->
+    <string-array name="Kaku17">
+        <item>犬</item>
+        <item>猫</item>
+        <item>鳥</item>
+    </string-array>
+    <!--18画の文字 -->
+    <string-array name="Kaku18">
+        <item>犬</item>
+        <item>猫</item>
+        <item>鳥</item>
+    </string-array>
+    <!--19画の文字 -->
+    <string-array name="Kaku19">
+        <item>犬</item>
+        <item>猫</item>
+        <item>鳥</item>
+    </string-array>
+    <!--20画の文字 -->
+    <string-array name="Kaku20">
+        <item>犬</item>
+        <item>猫</item>
+        <item>鳥</item>
+    </string-array>
+    <!--21画の文字 -->
+    <string-array name="Kaku21">
+        <item>犬</item>
+        <item>猫</item>
+        <item>鳥</item>
+    </string-array>
+    <!--22画の文字 -->
+    <string-array name="Kaku22">
+        <item>犬</item>
+        <item>猫</item>
+        <item>鳥</item>
+    </string-array>
+    <!--23画の文字 -->
+    <string-array name="Kaku23">
+        <item>犬</item>
+        <item>猫</item>
+        <item>鳥</item>
+    </string-array>
+    <!--24画の文字 -->
+    <string-array name="Kaku24">
+        <item>犬</item>
+        <item>猫</item>
+        <item>鳥</item>
+    </string-array>
+</resources>
