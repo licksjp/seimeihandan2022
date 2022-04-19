@@ -1,27 +1,24 @@
 package com.seimeihandan
-//2022.04.10 バックアップ　ひな形アプリ
+//2022.04.10 バックアップ　姓名判断
+import android.annotation.SuppressLint
 import android.app.AlertDialog
-import android.app.Dialog
 import android.content.Context
-import android.content.DialogInterface
-import android.graphics.Color
-import android.graphics.drawable.ColorDrawable
-import android.os.Bundle
-import android.os.Parcel
-import android.os.Parcelable
-import android.os.Vibrator
+import android.os.*
 import android.speech.tts.TextToSpeech
 import android.speech.tts.UtteranceProgressListener
-import android.support.v4.app.*
+import android.text.Editable
+import android.text.TextWatcher
 import android.util.Log
-import android.view.Window
-import android.view.WindowManager
+import android.view.LayoutInflater
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
+import androidx.annotation.RequiresApi
+
 import androidx.appcompat.app.AppCompatActivity
-import androidx.fragment.app.DialogFragment
+import androidx.appcompat.widget.AppCompatEditText
+import androidx.core.content.ContentProviderCompat.requireContext
 import java.util.*
 
 
@@ -86,7 +83,7 @@ class MainActivity() : AppCompatActivity(), TextToSpeech.OnInitListener, Parcela
                     val messageView: TextView = findViewById(R.id.view_screen)
                     messageView.text = (getString(R.string.Help_Select1, No))
                 }
-                5 -> {
+                9 -> {
                     flag = 7
                     val messageView: TextView = findViewById(R.id.view_screen)
                     messageView.text = (getString(R.string.Setting_Select1, No))
@@ -99,7 +96,14 @@ class MainActivity() : AppCompatActivity(), TextToSpeech.OnInitListener, Parcela
                     messageView.text = (getString(R.string.SeimeiHandan_Select1, No))
                     //Input_moji()
                 }
+                10 -> {
+                    /*設定　トップ画面*/
+                    mode = 5
+                    val messageView: TextView = findViewById(R.id.view_screen)
+                    messageView.text = (getString(R.string.Setting_Select1, No))
 
+
+                }
                 // val messageView: TextView = findViewById(R.id.view_screen)
                 // messageView.text = (getString(R.string.TopMenu_NoSelect))
                 // String.format(R.string.TopMenu_NoSelect,No)
@@ -122,11 +126,25 @@ class MainActivity() : AppCompatActivity(), TextToSpeech.OnInitListener, Parcela
                     messageView.text = (getString(R.string.Help_Select2, No))
                 }
                 6 -> {
-                    flag = 10
+                    flag = 11
 
                     val messageView: TextView = findViewById(R.id.view_screen)
                     messageView.text = (getString(R.string.SeimeiHandan_Select2, No))
                     //Input_moji()
+                }
+                9 -> {
+                    flag = 10
+                    val messageView: TextView = findViewById(R.id.view_screen)
+                    messageView.text = (getString(R.string.Setting_Select2, No))
+
+                }
+                10 -> {
+                    /*設定　トップ画面*/
+                    flag = 12
+                    val messageView: TextView = findViewById(R.id.view_screen)
+                    messageView.text = (getString(R.string.Setting_Select2, No))
+
+
                 }
                 // val messageView: TextView = findViewById(R.id.view_screen)
                 // messageView.text = (getString(R.string.TopMenu_NoSelect))
@@ -146,6 +164,12 @@ class MainActivity() : AppCompatActivity(), TextToSpeech.OnInitListener, Parcela
                     val messageView: TextView = findViewById(R.id.view_screen)
                     messageView.text = (getString(R.string.TopMenu_Select3, No))
                 }
+                10->{
+                    flag=13
+                    val messageView: TextView = findViewById(R.id.view_screen)
+                    messageView.text = (getString(R.string.Setting_Select3, No))
+                }
+
 
                 // val messageView: TextView = findViewById(R.id.view_screen)
                 // messageView.text = (getString(R.string.TopMenu_NoSelect))
@@ -233,14 +257,14 @@ class MainActivity() : AppCompatActivity(), TextToSpeech.OnInitListener, Parcela
 
                 }
                 4 -> {
-                     VersionDialog()
+                    VersionDialog()
                 }
                 5 -> {
-                     ReferenceBookDialog()
+                    ReferenceBookDialog()
                 }
                 6 -> {
                     /*設定　トップ画面*/
-                    mode = 5
+                    mode = 10
                     val messageView: TextView = findViewById(R.id.view_screen)
                     messageView.text = (getString(R.string.Setting_NoSelect, No))
 
@@ -251,15 +275,23 @@ class MainActivity() : AppCompatActivity(), TextToSpeech.OnInitListener, Parcela
 
                 }
                 8 -> {
-                    mode = 6
+                    mode = 99
 
                     val messageView: TextView = findViewById(R.id.view_screen)
-                    messageView.text = (getString(R.string.SeimeiHandan_NoSelect,No))
-                     //  Input_moji()
+                    messageView.text = (getString(R.string.SeimeiHandan_NoSelect, No))
+                    //  Input_moji()
                     //alertDialogDemo()
                 }
-                9->{
-                    Input_moji()
+                9 -> {
+                    // Input_moji()
+                }
+                12 -> {
+                    Input_Kanji_Search()
+                    // Input_moji()
+                }
+                13->{
+                    //登録文字数の表示
+                    Entry_Moji_check()
                 }
                 // val messageView: TextView = findViewById(R.id.view_screen)
                 // messageView.text = (getString(R.string.TopMenu_NoSelect))
@@ -377,12 +409,52 @@ class MainActivity() : AppCompatActivity(), TextToSpeech.OnInitListener, Parcela
             Log.d("tts", "TextToSpeech初期化失敗")
         }
     }
+//登録文字数の確認
+    fun Entry_Moji_check()
+    {
+        var EntryMoji = 0
+        //1画の文字
+        val Search_1kaku = resources.getStringArray(R.array.Kaku1)
+        //2画の文字
+        val Search_2kaku = resources.getStringArray(R.array.Kaku2)
+        //3画の文字
+        val Search_3kaku = resources.getStringArray(R.array.Kaku3)
+        //4画の文字
+        val Search_4kaku = resources.getStringArray(R.array.Kaku4)
+        //5画の文字
+        val Search_5kaku = resources.getStringArray(R.array.Kaku5)
+        //6画の文字
+        val Search_6kaku = resources.getStringArray(R.array.Kaku6)
+        //7画の文字
+        val Search_7kaku = resources.getStringArray(R.array.Kaku7)
+        //8画の文字
+        val Search_8kaku = resources.getStringArray(R.array.Kaku8)
+        //9画の文字
+        val Search_9kaku = resources.getStringArray(R.array.Kaku9)
+        //10画の文字
+        val Search_10kaku = resources.getStringArray(R.array.Kaku10)
 
+        //11画の文字
+        val Search_11kaku = resources.getStringArray(R.array.Kaku11)
+        EntryMoji=Search_1kaku.size+Search_2kaku.size+Search_3kaku.size+Search_4kaku.size+
+                Search_5kaku.size+Search_6kaku.size+Search_7kaku.size+Search_8kaku.size+
+                Search_9kaku.size+Search_10kaku.size+Search_11kaku.size
+        val messageView: TextView = findViewById(R.id.view_screen)
+        messageView.text = (getString(R.string.Entry_moji, EntryMoji))
+
+    }
     fun customDialog() {
         // customDialogFragmentを呼ぶ
-        val dialog = CustomDialog()
-        dialog.show(supportFragmentManager, "custom_dialog")
+        val dialog = customdialog()
+        dialog.show(supportFragmentManager, "dialog")
     }
+/*
+    fun kanjisearch() {
+        // customDialogFragmentを呼ぶ
+        val dialog2 = Kanji_Search()
+        dialog2.show(supportFragmentManager, "dialog")
+    }
+*/
 
     private fun SpeechText(text: String) {
         tts?.setLanguage(Locale.JAPANESE)
@@ -428,48 +500,254 @@ class MainActivity() : AppCompatActivity(), TextToSpeech.OnInitListener, Parcela
         customDialog()
     }
 
+     fun Result_moji_search(mojiText: String) {
+         var n = 0
+         var moji = "この文字は登録されていません"
+         //val res = requireContext().resources
+         //1画の文字
+         val Search_1kaku = resources.getStringArray(R.array.Kaku1)
+         //2画の文字
+         val Search_2kaku = resources.getStringArray(R.array.Kaku2)
+         //3画の文字
+         val Search_3kaku = resources.getStringArray(R.array.Kaku3)
+         //4画の文字
+         val Search_4kaku = resources.getStringArray(R.array.Kaku4)
+         //5画の文字
+         val Search_5kaku = resources.getStringArray(R.array.Kaku5)
+         //6画の文字
+         val Search_6kaku = resources.getStringArray(R.array.Kaku6)
+         //7画の文字
+         val Search_7kaku = resources.getStringArray(R.array.Kaku7)
+         //8画の文字
+         val Search_8kaku = resources.getStringArray(R.array.Kaku8)
+         //9画の文字
+         val Search_9kaku = resources.getStringArray(R.array.Kaku9)
+         //10画の文字
+         val Search_10kaku = resources.getStringArray(R.array.Kaku10)
+         //10画の文字
+         val Search_11kaku = resources.getStringArray(R.array.Kaku11)
+         //setContentView(R.layout.dialog2)
+         //var editTextDialog  = findViewById(R.id.editTextDialog)
+         // val signinView = this.inflate(R.layout.dialog2, null)
+         //val builder = AlertDialog.Builder(R.layout.dialog2)
+         // var mojiText = editTextDialog.text.toString()
 
-    //
-//
-//
-// //参考文献
-    fun ReferenceBookDialog() {
+            if ( moji != null) {
+                 //1画文字検索
+                 for (i in Search_1kaku) {
+                    if (mojiText == (i)) {
+                        var moji1 = "1画"
+                            val messageView: TextView = findViewById(R.id.view_screen)
+                              messageView.text = (getString(R.string.Result_Search_moji_Message,mojiText,moji1))
+                     }
+                   }
+                 //2画検索
+                for (i in Search_2kaku) {
+                    if (mojiText == (i)) {
+                        var moji1 = "2画"
+                        val messageView: TextView = findViewById(R.id.view_screen)
+                        messageView.text = (getString(R.string.Result_Search_moji_Message,mojiText,moji1))
+                    }
+                }
+                //3画検索
+                for (i in Search_3kaku) {
+                    if (mojiText == (i)) {
+                        var moji1 = "3画"
+                        val messageView: TextView = findViewById(R.id.view_screen)
+                        messageView.text = (getString(R.string.Result_Search_moji_Message,mojiText,moji1))
+                    }
+                }
+                //4画検索
+                for (i in Search_4kaku) {
+                    if (mojiText == (i)) {
+                        var moji1 = "4画"
+                        val messageView: TextView = findViewById(R.id.view_screen)
+                        messageView.text = (getString(R.string.Result_Search_moji_Message,mojiText,moji1))
+                    }
+                }
+                //5画検索
+                for (i in Search_5kaku) {
+                    if (mojiText == (i)) {
+                        var moji1 = "5画"
+                        val messageView: TextView = findViewById(R.id.view_screen)
+                        messageView.text = (getString(R.string.Result_Search_moji_Message,mojiText,moji1))
+                    }
+                }
+                //6画検索
+                for (i in Search_6kaku) {
+                    if (mojiText == (i)) {
+                        var moji1 = "6画"
+                        val messageView: TextView = findViewById(R.id.view_screen)
+                        messageView.text = (getString(R.string.Result_Search_moji_Message,mojiText,moji1))
+                    }
+                }
+                //7画検索
+                for (i in Search_7kaku) {
+                    if (mojiText == (i)) {
+                        var moji1 = "7画"
+                        val messageView: TextView = findViewById(R.id.view_screen)
+                        messageView.text = (getString(R.string.Result_Search_moji_Message,mojiText,moji1))
+                    }
+                }
+                //8画検索
+                for (i in Search_8kaku) {
+                    if (mojiText == (i)) {
+                        var moji1 = "8画"
+                        val messageView: TextView = findViewById(R.id.view_screen)
+                        messageView.text = (getString(R.string.Result_Search_moji_Message,mojiText,moji1))
+                    }
+                }
+                //9画検索
+                for (i in Search_9kaku) {
+                    if (mojiText == (i)) {
+                        var moji1 = "9画"
+                        val messageView: TextView = findViewById(R.id.view_screen)
+                        messageView.text = (getString(R.string.Result_Search_moji_Message,mojiText,moji1))
+                    }
+                }
+                //10画検索
+                for (i in Search_10kaku) {
+                    if (mojiText == (i)) {
+                        var moji1 = "10画"
+                        val messageView: TextView = findViewById(R.id.view_screen)
+                        messageView.text = (getString(R.string.Result_Search_moji_Message,mojiText,moji1))
+                    }
+                }
+                //11画検索
+                for (i in Search_11kaku) {
+                    if (mojiText == (i)) {
+                        var moji1 = "11画"
+                        val messageView: TextView = findViewById(R.id.view_screen)
+                        messageView.text = (getString(R.string.Result_Search_moji_Message,mojiText,moji1))
+                    }
+                }
+
+
+            }
+
+     }
+    fun Result_Message(message: String,n : Int)
+    {
         AlertDialog.Builder(this)
-            .setTitle(R.string.ReferenceBookTitle)
-            .setMessage(R.string.ReferenceBookSentense)
+            .setTitle(R.string.Result_Search_moji_Title)
+           // .setMessage(getString(R.string.Result_Search_moji_Message))
+            .setMessage(getString(R.string.Result_Search_moji_Message, message, n))
             .setPositiveButton(R.string.Ok) { dialog, which -> }
             .show()
+
+    }
+         // 漢字検索
+         fun Kanji_Search() {
+             //Kanji_Search()
+         }
+
+         //
+//
+//EditText
+
+         @SuppressLint("NewApi")
+         fun Input_Kanji_Search() {
+             // ダイアログ専用のレイアウトを読み込む
+             val dialogLayout = LayoutInflater.from(this).inflate(R.layout.dialog2, null)
+             val editText = dialogLayout.findViewById<AppCompatEditText>(R.id.editTextDialog)
+
+// ダイアログ作成
+             val dialog = AlertDialog.Builder(this)
+                 .setTitle(R.string.Input_MojiSearch_Title)
+                 .setMessage(R.string.Input_MojiSearch_Message)
+                 .setView(dialogLayout)
+                 .setPositiveButton(R.string.Ok) { dialog, _ ->
+                     var moji = editText.text.toString()
+                     Result_moji_search(moji)
+                     // OKボタンを押したときの処理
+                     dialog.dismiss()
+                 }
+                 .setNegativeButton("キャンセル") { dialog, _ ->
+                     // キャンセルボタンを押したときの処理
+                     dialog.dismiss()
+                 }
+                 .create()
+             dialog.show()
+
+// ダイアログのボタンを取得し、デフォルトの色を「#000000」に設定
+             dialog.getButton(AlertDialog.BUTTON_POSITIVE).setTextColor(getColor(R.color.black))
+             dialog.getButton(AlertDialog.BUTTON_NEGATIVE).setTextColor(getColor(R.color.black))
+
+// AppCompatEditTextにTextChangedListenerをセット
+             editText.addTextChangedListener(object : TextWatcher {
+                 override fun beforeTextChanged(
+                     s: CharSequence?,
+                     start: Int,
+                     count: Int,
+                     after: Int
+                 ) {
+                 }
+
+                 override fun onTextChanged(
+                     s: CharSequence?,
+                     start: Int,
+                     before: Int,
+                     count: Int
+                 ) {
+                 }
+
+                 @SuppressLint("NewApi")
+                 override fun afterTextChanged(s: Editable?) {
+                     // 1~32文字の時だけOKボタンを有効化する
+                     if (s.isNullOrEmpty() || s.length > 32) {
+                         dialog.getButton(AlertDialog.BUTTON_POSITIVE).isEnabled = false
+                         dialog.getButton(AlertDialog.BUTTON_POSITIVE)
+                             .setTextColor(getColor(R.color.gray))
+                     } else {
+                         dialog.getButton(AlertDialog.BUTTON_POSITIVE).isEnabled = true
+                         dialog.getButton(AlertDialog.BUTTON_POSITIVE)
+                             .setTextColor(getColor(R.color.black))
+                     }
+                 }
+             })
+         }
+
+         // //参考文献
+         fun ReferenceBookDialog() {
+             AlertDialog.Builder(this)
+                 .setTitle(R.string.ReferenceBookTitle)
+                 .setMessage(R.string.ReferenceBookSentense)
+                 .setPositiveButton(R.string.Ok) { dialog, which -> }
+                 .show()
 //
 //
 //return builder.create()
-    }
+         }
 
-    //
-    fun  VersionDialog(){
-        AlertDialog.Builder(this)
-            .setTitle(R.string.VersionTitle)
-            .setMessage(R.string.VersionSentense)
-            .setPositiveButton(R.string.Ok) { dialog, which -> }
-            .show()
-    }
-// //設定　バイブのオンオフ 
-    fun Setting_Vibration() {
+         //
+         fun VersionDialog() {
+             AlertDialog.Builder(this)
+                 .setTitle(R.string.VersionTitle)
+                 .setMessage(R.string.VersionSentense)
+                 .setPositiveButton(R.string.Ok) { dialog, which -> }
+                 .show()
+         }
 
-        val strList = arrayOf(
-            getString(R.string.Setting_Vibration_List1), getString(R.string.Setting_Vibration_List2)
-        )
+         // //設定　バイブのオンオフ
+         fun Setting_Vibration() {
 
-        AlertDialog.Builder(this) // FragmentではActivityを取得して生成
-            .setTitle(R.string.Setting_Vibration_Title)
-            .setSingleChoiceItems(strList, 0) { dialog_, _ ->
-                // TODO:アイテム選択時の挙動
-            }
-            .setPositiveButton(getString(R.string.Ok)) { dialog, which ->
-            }
-            .show()
+             val strList = arrayOf(
+                 getString(R.string.Setting_Vibration_List1),
+                 getString(R.string.Setting_Vibration_List2)
+             )
+
+             AlertDialog.Builder(this) // FragmentではActivityを取得して生成
+                 .setTitle(R.string.Setting_Vibration_Title)
+                 .setSingleChoiceItems(strList, 0) { dialog_, _ ->
+                     // TODO:アイテム選択時の挙動
+                 }
+                 .setPositiveButton(getString(R.string.Ok)) { dialog, which ->
+                 }
+                 .show()
 
 
-    }
+         }
+
 }
 
 

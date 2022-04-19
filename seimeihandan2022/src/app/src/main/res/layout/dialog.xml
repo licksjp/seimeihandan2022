@@ -28,7 +28,7 @@
             android:textColor="@color/black"
             android:gravity="center"
 
-            android:maxLength="12"
+            android:maxLength="1"
             android:inputType="text"
             android:layout_marginTop="20dp"
             android:hint="名前を入れてください"
