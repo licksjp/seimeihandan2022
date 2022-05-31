@@ -2,8 +2,17 @@
     <string name="app_name">姓名判断</string>
     <string name="TopMessage">入力ボタンを押してください</string>
     <string name="AllClearMessage">オールクリアしました</string>
-
+<!--姓名判断　相性占い-->
+    <string name="Aisyou_Message_Title">相性占い(2人用)</string>
+    <string name="Aisyou_Message_Message">男性の名前の姓の部分を入れてください</string>
+    <string name="Aisyou_Message2_Message">男性の名前の名の部分を入れてください</string>
+    <string name="Aisyou_Message_Message2">女性の名前の姓の部分を入れてください</string>
+    <string name="Aisyou_Message2_Message2">女性の名前の名の部分を入れてください</string>
     <string name="Ready_Message">準備ができました。</string>
+    <string name="Chiun_moji">地運:%1$d\n\n\n\n\n\n\n\n次へ:入力ボタン</string>
+    <string name="Gai_moji">外運:%1$d\n\n\n\n\n\n\n\n次へ:入力ボタン</string>
+    <string name="Chiun_moji_Gai_moji">地運:%1$d\n外運:%2$d\n\n\n\n\n\n\n次へ:入力ボタン</string>
+    <string name="Result_Chiun_moji_Gai_moji">・男性:%1$s\n・地運:%2$d\n・女性:%3$s\n・外運:%4$d\n・相性判定\n%5$s\n\n\n次へ:入力ボタン</string>
   <!--メイン画面-->
     <string name="TopMenu_NoSelect">メイン画面\n1.姓名判断\n2.設定\n3.ヘルプ\n\n\n\n\n番号:%d.無選択</string>
     <string name="TopMenu_Select1">メイン画面\n1.姓名判断\n2.設定\n3.ヘルプ\n\n\n\n\n番号:%d.姓名判断</string>
@@ -14,7 +23,10 @@
     <string name="SeimeiHandan_Select1">姓名判断\n1.名前の吉凶を見る\n2.相性占い(2人用)\n\n\n\n\n\n番号:%d.名前の吉凶を見る</string>
     <string name="SeimeiHandan_Select2">姓名判断\n1.名前の吉凶を見る\n2.相性占い(2人用)\n\n\n\n\n\n番号:%d.相性占い(2人用)</string>
     <string name="SeimeiHandan_Select3">姓名判断\n1.名前の吉凶を見る\n2.相性占い(2人用)\n\n\n\n\n\n番号:%d.ヘルプ</string>
-
+<!--1.姓名判断　文字の吉凶Title-->
+    <string name="MojiKikkyo_Title">名前の吉凶</string>
+    <string name="MojiKikkyo_Message">調べたい名前を入れてください</string>
+    <string name="MojiKikkyo_Hint">調べたい名前を6文字までで入力</string>
     　　<!--2.設定-->
     <string name="Setting_NoSelect">設定\n1.バイブの設定\n2.画数検索\n3.登録文字数の確認\n\n\n\n\n番号:%d.無選択</string>
     <string name="Setting_Select1">設定\n1.バイブの設定\n2.画数検索\n3.登録文字数の確認\n\n\n\n\n番号:%d.バイブの設定</string>
@@ -24,14 +36,17 @@
     <!--2 .設定　文字検索 -->
     <string name="Input_MojiSearch_Title">登録文字の検索</string>
     <string name="Input_MojiSearch_Message">調べたい文字を1文字いれてください</string>
+    <string name="Result_NoEntry">この文字は登録されていません</string>
     <!--2 .設定　登録文字数-->
     <string name="Entry_moji">登録文字数:%1$d文字\n\n\n\n\n\n\n\nクリアボタン</string>
 
     <!-- 画数検索　結果表示 -->
     <string name="Result_Search_moji_Title">画数検索　結果表示</string>
     <string name="Result_Search_moji_Message">登録文字:%1$s\n画数:%2$s\n\n\n\n\n\n入力ボタン:もう一度\nクリアボタン:トップ画面</string>
-    <!--<string name="Result_Search_moji_Message">登録文字</string>-->
+    <string name="Result_Search_moji_Message2">登録文字:%1$s\n総数:%2$d\n吉凶:%3$s\n\n\n\n\n入力ボタン:もう一度\nクリアボタン:トップ画面</string>
 
+    <!--<string name="Result_Search_moji_Message">登録文字</string>-->
+　　　<string name="moji_over">6文字以内で入れてください</string>
     <string name="Setting_Vibration_Title">バイブの設定</string>
     <string name="Setting_Vibration_List1">バイブオン</string>
     <string name="Setting_Vibration_List2">バイブオフ</string>
