@@ -22,6 +22,9 @@ import androidx.core.content.ContentProviderCompat.requireContext
 import java.util.*
 import java.util.Collections.list
 import java.util.*
+import com.google.android.gms.ads.AdRequest
+import com.google.android.gms.ads.AdView
+import com.google.android.gms.ads.MobileAds
 
 class MainActivity() : AppCompatActivity(), TextToSpeech.OnInitListener, Parcelable {
     var No = 0
@@ -69,13 +72,18 @@ class MainActivity() : AppCompatActivity(), TextToSpeech.OnInitListener, Parcela
         mode = parcel.readInt()
         flag = parcel.readInt()
     }
-
+    lateinit var mAdView : AdView
     @RequiresApi(Build.VERSION_CODES.M)
     override fun onCreate(savedInstanceState: Bundle?) {
         //setHasOptionsMenu(true)
         textToSpeech = TextToSpeech(this, this)
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        MobileAds.initialize(this) {}
+
+        mAdView = findViewById(R.id.adView)
+        val adRequest = AdRequest.Builder().build()
+        mAdView.loadAd(adRequest)
         //val actionBar: ActionBar? = supportActionBar
         //if (actionBar != null) {
         //  actionBar.setTitle("テキスト")
@@ -130,6 +138,7 @@ class MainActivity() : AppCompatActivity(), TextToSpeech.OnInitListener, Parcela
                 10 -> {
                     /*設定　トップ画面*/
                     mode = 5
+                    flag = 12
                     val messageView: TextView = findViewById(R.id.view_screen)
                     messageView.text = (getString(R.string.Setting_Select1, No))
 
@@ -174,7 +183,7 @@ class MainActivity() : AppCompatActivity(), TextToSpeech.OnInitListener, Parcela
                 }
                 10 -> {
                     /*設定　トップ画面*/
-                    flag = 12
+                    flag = 13
                     val messageView: TextView = findViewById(R.id.view_screen)
                     messageView.text = (getString(R.string.Setting_Select2, No))
 
@@ -198,12 +207,14 @@ class MainActivity() : AppCompatActivity(), TextToSpeech.OnInitListener, Parcela
                     val messageView: TextView = findViewById(R.id.view_screen)
                     messageView.text = (getString(R.string.TopMenu_Select3, No))
                 }
+
+               /*
                 10 -> {
                     flag = 13
                     val messageView: TextView = findViewById(R.id.view_screen)
                     messageView.text = (getString(R.string.Setting_Select3, No))
                 }
-
+                */
 
                 // val messageView: TextView = findViewById(R.id.view_screen)
                 // messageView.text = (getString(R.string.TopMenu_NoSelect))
@@ -214,34 +225,42 @@ class MainActivity() : AppCompatActivity(), TextToSpeech.OnInitListener, Parcela
         }
         Button4.setOnClickListener {
             Vibration()
-            Toast.makeText(this, "テストメッセージです", Toast.LENGTH_SHORT).show()
+            //Toast.makeText(this, "テストメッセージです", Toast.LENGTH_SHORT).show()
         }
         Button5.setOnClickListener {
             Vibration()
-            Toast.makeText(this, "テストメッセージです", Toast.LENGTH_SHORT).show()
+            //Toast.makeText(this, "テストメッセージです", Toast.LENGTH_SHORT).show()
         }
         Button6.setOnClickListener {
             Vibration()
-            Toast.makeText(this, "テストメッセージです", Toast.LENGTH_SHORT).show()
+            //Toast.makeText(this, "テストメッセージです", Toast.LENGTH_SHORT).show()
         }
         Button7.setOnClickListener {
             Vibration()
-            Toast.makeText(this, "テストメッセージです", Toast.LENGTH_SHORT).show()
+            //Toast.makeText(this, "テストメッセージです", Toast.LENGTH_SHORT).show()
         }
         Button8.setOnClickListener {
             Vibration()
-            Toast.makeText(this, "テストメッセージです", Toast.LENGTH_SHORT).show()
+            //Toast.makeText(this, "テストメッセージです", Toast.LENGTH_SHORT).show()
         }
 
         Button9.setOnClickListener {
             Vibration()
-            Toast.makeText(this, "テストメッセージです", Toast.LENGTH_SHORT).show()
+            //Toast.makeText(this, "テストメッセージです", Toast.LENGTH_SHORT).show()
         }
         Button_Clear.setOnClickListener {
             Vibration()
-            flag = 0
-            mode = 0
-            No = 0
+             flag = 0
+             mode = 0
+             No = 0
+             chiun = 0
+             buf_chiun=0
+             gaiun = 0
+             buffer_chiun = 0
+             buffer_gaiun = 0
+             buf_gaiun=0
+             buf_gaiun2=0
+             buf_gaiun3=0
             val messageView: TextView = findViewById(R.id.view_screen)
             messageView.text = (getString(R.string.TopMessage))
 
@@ -2261,9 +2280,11 @@ fun Input_name1_male()
          // //参考文献
          fun ReferenceBookDialog() {
              AlertDialog.Builder(this)
-                 .setTitle(R.string.ReferenceBookTitle)
-                 .setMessage(R.string.ReferenceBookSentense)
-                 .setPositiveButton(R.string.Ok) { dialog, which -> }
+                 .setTitle(R.string.ReferenceBookTitle1)
+                 .setMessage(R.string.ReferenceBookSentense1)
+                 .setPositiveButton(R.string.Ok) { dialog, which ->
+                     ReferenceBookDialog2()
+                 }
                  .show()
 //
 //
@@ -2271,8 +2292,8 @@ fun Input_name1_male()
          }
     fun ReferenceBookDialog2() {
         AlertDialog.Builder(this)
-            .setTitle(R.string.ReferenceBookTitle)
-            .setMessage(R.string.ReferenceBookSentense)
+            .setTitle(R.string.ReferenceBookTitle2)
+            .setMessage(R.string.ReferenceBookSentense2)
             .setPositiveButton(R.string.Ok) { dialog, which -> }
             .show()
 //

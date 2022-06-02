@@ -1,5 +1,5 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <string name="app_name">姓名判断</string>
+    <string name="app_name">姓名判断・改 Light</string>
     <string name="TopMessage">入力ボタンを押してください</string>
     <string name="AllClearMessage">オールクリアしました</string>
 <!--姓名判断　相性占い-->
@@ -28,10 +28,9 @@
     <string name="MojiKikkyo_Message">調べたい名前を入れてください</string>
     <string name="MojiKikkyo_Hint">調べたい名前を6文字までで入力</string>
     　　<!--2.設定-->
-    <string name="Setting_NoSelect">設定\n1.バイブの設定\n2.画数検索\n3.登録文字数の確認\n\n\n\n\n番号:%d.無選択</string>
-    <string name="Setting_Select1">設定\n1.バイブの設定\n2.画数検索\n3.登録文字数の確認\n\n\n\n\n番号:%d.バイブの設定</string>
-    <string name="Setting_Select2">設定\n1.バイブの設定\n2.画数検索\n3.登録文字数の確認\n\n\n\n\n番号:%d.画数検索</string>
-    <string name="Setting_Select3">設定\n1.バイブの設定\n2.画数検索\n3.登録文字数の確認\n\n\n\n\n番号:%d.登録文字数の確認</string>
+    <string name="Setting_NoSelect">設定\n1.画数検索\n2.登録文字数の確認\n\n\n\n\n\n番号:%d.無選択</string>
+    <string name="Setting_Select1">設定\n1.画数検索\n2.登録文字数の確認\n\n\n\n\n\n番号:%d.画数検索</string>
+    <string name="Setting_Select2">設定\n1.画数検索\n2.登録文字数の確認\n\n\n\n\n\n番号:%d.登録文字数の確認</string>
 
     <!--2 .設定　文字検索 -->
     <string name="Input_MojiSearch_Title">登録文字の検索</string>
@@ -58,12 +57,13 @@
     <string name="Help_Select2">ヘルプ\n1.バージョン\n2.参考文献\n\n\n\n\n\n番号:%d.参考文献</string>
 <!-- Version Dialog-->
     <string name="VersionTitle">バージョン情報</string>
-    <string name="VersionSentense">アプリ名:\nバージョン\nAuthor\nE-mail:licksjp@gmail.com\n(C)Copyrights licksjp All right reserved</string>
+    <string name="VersionSentense">アプリ名:姓名判断・改 Light\nバージョン:0.0.8α\nAuthor:licksjp\nE-mail:licksjp@gmail.com\n(C)Copyrights licksjp All right reserved</string>
     <string name="Ok">Ok</string>
 <!--ReferenceBook-->
-    <string name="ReferenceBookTitle">参考文献</string>
-    <string name="ReferenceBookSentense">Title:\n出版社:\n著者\n定価:\n</string>
-
+    <string name="ReferenceBookTitle1">参考文献</string>
+    <string name="ReferenceBookSentense1">Title:安斎流 究極の姓名判断\n出版社:説話者\n著者:安斎 勝洋\n定価:1800+税\n</string>
+    <string name="ReferenceBookTitle2">参考文献</string>
+    <string name="ReferenceBookSentense2">Title:運命が変わる"プチ改名"\n出版社:小学館\n著者:イウ”ルルド遥華\n定価:800 + 税\n</string>
     <!--ボタン配列-->
 
     <string name="Button_9">9</string>

@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--  app ID:ca-app-pub-7821909322657049~5621263620-->
+<!--  Unit ID:ca-app-pub-7821909322657049/1129701885-->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.seimeihandan">
 
@@ -21,7 +23,9 @@
             </intent-filter>
         </activity>
 
-
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-7821909322657049~5621263620"/>
 
 
 
